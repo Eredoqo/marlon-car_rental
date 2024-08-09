@@ -6,6 +6,13 @@ blockquote {
   line-height: 35px;
 }
 
+.ri-calendar-line,
+.ri-user-line,
+.ri-time-line {
+  color: green;
+  font-size: 22px;
+}
+
 .single__comment img {
   width: 70px;
   height: 70px;

@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
 import AboutSection from "../components/UI/AboutSection";
 import ServicesList from "../components/UI/ServicesList";
-import carData from "../assets/data/carData";
+import carData from "./../utils/data/carData";
 import CarItem from "../components/UI/CarItem";
 
 import Testimonial from "../components/UI/Testimonial";
@@ -25,7 +25,7 @@ const Home = () => {
           <Container>
             <Row className="form__row" style={{ borderRadius: "15px" }}>
               <Col lg="4" md="4">
-                <div className="find__cars-left">
+                <div className="find__cars-left" style={{ color: "#fff" }}>
                   <h2>Find your best car here</h2>
                 </div>
               </Col>
@@ -45,7 +45,7 @@ const Home = () => {
           <Row>
             <Col lg="12" className="mb-5 text-center">
               <h6 className="section__subtitle">See our</h6>
-              <h2 className="section__title">Popular Services</h2>
+              <h2 className="section__title-home">Popular Services</h2>
             </Col>
 
             <ServicesList />
@@ -88,7 +88,7 @@ const Home = () => {
           <Row>
             <Col lg="12" className="mb-5 text-center">
               <h6 className="section__subtitle">Explore our blogs</h6>
-              <h2 className="section__title">Latest Blogs</h2>
+              <h2 className="section__title-home">Latest Blogs</h2>
             </Col>
 
             <BlogList />
