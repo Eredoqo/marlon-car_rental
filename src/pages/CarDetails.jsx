@@ -1,14 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import carData from "./../utils/data/carData";
-import { Container, Row, Col } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  FormGroup,
+  Input,
+  Form,
+  Button,
+} from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import { useParams } from "react-router-dom";
 import BookingForm from "../components/UI/BookingForm";
-import PaymentMethod from "../components/UI/PaymentMethod";
 
 const CarDetails = () => {
   const { slug } = useParams();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [testimonial, setTestimonial] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would handle the submission, for example send it to your server
+    console.log(name, testimonial);
+    setName("");
+    setTestimonial("");
+  };
 
   const singleCarItem = carData.find((item) => item.carName === slug);
 
@@ -112,12 +131,43 @@ const CarDetails = () => {
                 <h5 className="mb-4 fw-bold ">Booking Information</h5>
                 <BookingForm />
               </div>
+              <div className="payment text-center mt-5">
+                <button>Reserve Now</button>
+              </div>
             </Col>
-
             <Col lg="5" className="mt-5">
-              <div className="payment__info mt-5">
-                <h5 className="mb-4 fw-bold ">Payment Information</h5>
-                <PaymentMethod />
+              <div className="testimonial-form">
+                <h3>Submit your testimonial</h3>
+                <Form onSubmit={handleSubmit}>
+                  <FormGroup>
+                    <Input
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Your name"
+                      required
+                    />
+                  </FormGroup>{" "}
+                  <FormGroup>
+                    <Input
+                      type="text"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Your email"
+                      required
+                    />
+                  </FormGroup>
+                  <FormGroup>
+                    <Input
+                      type="textarea"
+                      value={testimonial}
+                      onChange={(e) => setTestimonial(e.target.value)}
+                      placeholder="Your testimonial"
+                      required
+                    />
+                  </FormGroup>
+                  <Button type="submit">Submit Testimonial</Button>
+                </Form>
               </div>
             </Col>
           </Row>

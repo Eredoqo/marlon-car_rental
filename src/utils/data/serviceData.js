@@ -1,44 +1,27 @@
 const serviceData = [
   {
     id: 1,
-    title: "City Transfer",
-    icon: "ri-map-pin-2-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    title: "Rent at the Airport",
+    icon: "ri-flight-takeoff-line",
+    desc: "We offer convenient car rental at the airport. Pick up your car as soon as you land.",
   },
-
   {
     id: 2,
-    title: "Whole  City Tour",
-    icon: "ri-community-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
-  },
-
-  {
-    id: 3,
     title: "Unlimited Miles Car Rental",
     icon: "ri-roadster-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Rent a car with us and enjoy unlimited mileage. Drive as much as you want without any extra charges.",
   },
-
   {
-    id: 4,
+    id: 3,
     title: "Fast & Easy Booking",
     icon: "ri-timer-flash-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Our booking process is fast and easy. Book a car in just a few clicks.",
   },
-
   {
-    id: 5,
-    title: "Many Pickup Locations",
-    icon: "ri-map-pin-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
-  },
-
-  {
-    id: 6,
-    title: "Airport Transfer",
-    icon: "ri-flight-takeoff-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    id: 4,
+    title: "Service Point 24/7",
+    icon: "ri-customer-service-2-line",
+    desc: "Our service points are open 24/7. We're always here to help you.",
   },
 ];
 

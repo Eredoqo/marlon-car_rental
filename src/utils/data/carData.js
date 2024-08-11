@@ -1,5 +1,5 @@
 // import all images from assets/images directory
-import img01 from "./../../assets/all-images/cars-img/nissan-offer.png";
+import img01 from "./../../assets/all-images/cars-img/Volkswagen-Golf-VI.jpg";
 import img02 from "./../../assets/all-images/cars-img/offer-toyota.png";
 import img03 from "./../../assets/all-images/cars-img/bmw-offer.png";
 import img04 from "./../../assets/all-images/cars-img/nissan-offer.png";
@@ -11,130 +11,114 @@ import img08 from "./../../assets/all-images/cars-img/mercedes-offer.png";
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
+    brand: "Volkswagen",
     rating: 112,
-    carName: "Tesla Malibu",
+    carName: "Volkswagen Golf VI",
     imgUrl: img01,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
+    model: "2022",
+    price: 35,
+    speed: "150km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Volkswagen Golf VI is a compact car that offers a smooth and comfortable ride. It's equipped with a powerful engine that allows it to reach a top speed of 150km/h. The car comes with GPS Navigation and heated seats for added comfort. The automatic transmission makes it easy to drive, even for beginners. The Golf VI is a reliable and economical choice for both city driving and long-distance journeys.",
   },
 
   {
     id: 2,
     brand: "Toyota",
     rating: 102,
-    carName: "Toyota Aventador",
+    carName: "Toyota Corolla",
     imgUrl: img02,
     model: "Model-2022",
-    price: 50,
-    speed: "20kmpl",
+    price: 25,
+    speed: "200km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Toyota Corolla is a classic compact car known for its reliability and fuel efficiency. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 200km/h make it a great choice for both city and highway driving.",
   },
 
   {
     id: 3,
-    brand: "BMW",
+    brand: "Volkswagen",
     rating: 132,
-    carName: "BMW X3",
+    carName: "Volkswagen Golf V",
     imgUrl: img03,
     model: "Model-2022",
-    price: 65,
-    speed: "20kmpl",
+    price: 35,
+    speed: "20km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Volkswagen Golf V is a versatile compact car with a powerful engine. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 20km/h make it suitable for city driving.",
   },
 
   {
     id: 4,
-    brand: "Nissan",
+    brand: "Ford",
     rating: 102,
-    carName: "Nissan Mercielago",
+    carName: "Ford Fiesta",
     imgUrl: img04,
     model: "Model-2022",
-    price: 70,
-    speed: "20kmpl",
+    price: 20,
+    speed: "170km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Ford Fiesta is a compact car that's fun to drive. It offers a smooth ride and a comfortable interior. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 170km/h make it a great choice for both city and highway driving.",
   },
 
   {
     id: 5,
-    brand: "Ferrari",
+    brand: "Toyota",
     rating: 94,
-    carName: "Ferrari Camry",
+    carName: "Toyota Rav4",
     imgUrl: img05,
     model: "Model-2022",
-    price: 45,
-    speed: "20kmpl",
+    price: 55,
+    speed: "200km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Toyota Rav4 is a compact SUV that offers a comfortable ride and a spacious interior. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 200km/h make it a great choice for both city and highway driving.",
   },
 
   {
     id: 6,
-    brand: "Mercedes",
+    brand: "Toyota",
     rating: 119,
-    carName: "Mercedes Benz XC90",
+    carName: "Toyota Corolla",
     imgUrl: img06,
     model: "Model-2022",
-    price: 85,
-    speed: "20kmpl",
+    price: 25,
+    speed: "150km/hl",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Toyota Corolla is a classic compact car known for its reliability and fuel efficiency. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 150km/h make it a great choice for both city and highway driving.",
   },
 
   {
     id: 7,
-    brand: "Audi",
+    brand: "Skoda",
     rating: 82,
-    carName: "Audi Fiesta",
+    carName: "Skoda Octavia Wagon",
     imgUrl: img07,
     model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
+    price: 45,
+    speed: "200km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
-  },
-
-  {
-    id: 8,
-    brand: "Colorado",
-    rating: 52,
-    carName: "Rolls Royce Colorado",
-    imgUrl: img08,
-    model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
-    gps: "GPS Navigation",
-    seatType: "Heated seats",
-    automatic: "Automatic",
-    description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Skoda Octavia Wagon is a spacious and comfortable wagon. It's equipped with GPS Navigation and heated seats for added comfort. The automatic transmission and top speed of 200km/h make it a great choice for both city and highway driving.",
   },
 ];
 
