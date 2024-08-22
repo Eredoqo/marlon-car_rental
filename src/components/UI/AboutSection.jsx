@@ -5,16 +5,7 @@ import aboutImg from "../../assets/all-images/cars-img/bmw-offer.png";
 
 const AboutSection = ({ aboutClass }) => {
   return (
-    <section
-      id="about"
-      className="about__section"
-      style={
-        (aboutClass === "aboutPage"
-          ? { marginTop: "0px" }
-          : { marginTop: "0px" },
-        { paddingTop: "100px" })
-      }
-    >
+    <section id="about" className="about__section">
       <Container>
         <Row>
           <Col lg="6" md="6">
