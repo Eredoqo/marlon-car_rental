@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-
 import { Container } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "../../styles/header.css";
 import logo from "../../assets/all-images/marlon.jpeg";
 
@@ -11,20 +10,23 @@ const navLinks = [
     display: "Home",
   },
   {
-    path: "/about",
+    path: "/#about",
     display: "About",
   },
   {
-    path: "/cars",
+    path: "/#services",
+    display: "Services",
+  },
+  {
+    path: "/#cars",
     display: "Cars",
   },
-
   {
-    path: "/blogs",
+    path: "/#blogs",
     display: "Blog",
   },
   {
-    path: "/contact",
+    path: "/#contact",
     display: "Contact",
   },
 ];
@@ -51,18 +53,9 @@ const Header = () => {
               <div className="navigation" ref={menuRef} onClick={toggleMenu}>
                 <div className="menu">
                   {navLinks.map((item, index) => (
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive
-                          ? "nav__active nav__item"
-                          : "nav__item"
-                      }
-                      style={{}}
-                      key={index}
-                    >
+                    <Link to={item.path} className="nav__item" key={index}>
                       {item.display}
-                    </NavLink>
+                    </Link>
                   ))}
                 </div>
               </div>

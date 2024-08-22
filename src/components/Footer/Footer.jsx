@@ -1,11 +1,10 @@
 import React from "react";
-
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import "../../styles/footer.css";
-import logo from "./../../assets/all-images/marlon.jpeg";
+import logo from "./../../assets/all-images/marlon_no_background.png";
 
 const quickLinks = [
   {
@@ -31,12 +30,12 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <Container>
         <Row style={{ justifyContent: "space-between" }}>
           <Col lg="4" md="4" sm="12">
             <div className="logo footer__logo">
-              <Link to="/home" className=" d-flex align-items-center gap-2">
+              <Link to="/" className=" d-flex align-items-center gap-2">
                 <img
                   src={logo}
                   style={{
@@ -87,8 +86,8 @@ const Footer = () => {
           <Col lg="12">
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <i class="ri-copyright-line"></i>Copyright {year}, Marlon Car
-                Rentals. All rights reserved.
+                <i className="ri-copyright-line"></i>Copyright {year}, Marlon
+                Car Rentals. All rights reserved.
               </p>
             </div>
           </Col>
