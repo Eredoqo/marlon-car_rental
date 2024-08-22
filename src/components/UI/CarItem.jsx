@@ -3,7 +3,7 @@ import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../styles/car-item.css";
 import RentModal from "./RentModal";
-import DetailsModal from "./detailsModal";
+import DetailsModal from "./DetailModal";
 
 const CarItem = (props) => {
   const { imgUrl, model, carName, automatic, speed, price } = props.item;
