@@ -71,8 +71,12 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">Explore our blogs</h6>
-              <h2 className="section__title-home">Latest Blogs</h2>
+              <h6 className="section__subtitle">
+                Explore our Best and Vissited Places in Albania
+              </h6>
+              <h2 className="section__title-home">
+                Latest Places visited by our customers
+              </h2>
             </Col>
 
             <BlogList />

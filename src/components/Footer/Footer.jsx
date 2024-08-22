@@ -40,8 +40,8 @@ const Footer = () => {
                 <img
                   src={logo}
                   style={{
-                    width: "70px",
-                    height: "60px",
+                    width: "100px",
+                    height: "80px",
                     borderRadius: "15px",
                   }}
                 />
