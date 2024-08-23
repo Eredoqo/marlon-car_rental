@@ -44,19 +44,27 @@ const Header = () => {
             <img
               style={{ width: "70px", height: "60px", borderRadius: "15px" }}
               src={logo}
+              alt="Logo"
             />
             <div className="navigation__wrapper">
               <span className="mobile__menu">
-                <i class="ri-menu-line" onClick={toggleMenu}></i>
+                <i className="ri-menu-line" onClick={toggleMenu}></i>
               </span>
 
-              <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+              <div className="navigation" ref={menuRef}>
                 <div className="menu">
-                  {navLinks.map((item, index) => (
-                    <Link to={item.path} className="nav__item" key={index}>
-                      {item.display}
-                    </Link>
-                  ))}
+                  <div className="menu__header justify-content-end">
+                    <span className="close__menu" onClick={toggleMenu}>
+                      &times;
+                    </span>
+                  </div>
+                  <div className="menu__links">
+                    {navLinks.map((item, index) => (
+                      <Link to={item.path} className="nav__item" key={index}>
+                        {item.display}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
