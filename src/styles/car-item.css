@@ -8,6 +8,11 @@
   color: #f9a826;
   font-size: 1.4rem;
 }
+.car__img img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
 
 .car__item-btn {
   border-radius: 0;

@@ -24,7 +24,7 @@ const HeroSlider = () => {
           <Container>
             <div className="slider__content ">
               <h4 className="text-light mb-3">
-                Cars For Rent $25 to $50 Per Day
+                Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
                 Reserve Now and See Our Offers
@@ -41,7 +41,7 @@ const HeroSlider = () => {
           <Container>
             <div className="slider__content ">
               <h4 className="text-light mb-3">
-                Cars For Rent $25 to $50 Per Day
+                Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
                 Reserve Now and See Our Offers
@@ -58,7 +58,7 @@ const HeroSlider = () => {
           <Container>
             <div className="slider__content ">
               <h4 className="text-light mb-3">
-                Cars For Rent $25 to $50 Per Day
+                Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
                 Reserve Now and See Our Offers

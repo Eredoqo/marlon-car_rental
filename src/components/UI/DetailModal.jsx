@@ -30,7 +30,7 @@ const DetailsModal = ({ item, modal, toggle }) => {
               <h2 className="section__title">{carName}</h2>
 
               <div className="d-flex align-items-center gap-3 mb-4 mt-3">
-                <h6 className="rent__price fw-bold fs-4">${price}.00 / Day</h6>
+                <h6 className="rent__price fw-bold fs-4">€{price}.00 / Day</h6>
 
                 <span className="d-flex align-items-center gap-1">
                   <span style={{ color: "#f9a826" }}>
