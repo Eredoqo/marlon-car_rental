@@ -16,32 +16,32 @@ const navLinks = [
   {
     path: "/",
     display: "Home",
-    icon: <FaHome size={30} />,
+    icon: <FaHome size={27} />,
   },
   {
     path: "/#about",
     display: "About",
-    icon: <FaInfo size={30} />,
+    icon: <FaInfo size={27} />,
   },
   {
     path: "/#services",
     display: "Services",
-    icon: <FaWrench size={30} />,
+    icon: <FaWrench size={27} />,
   },
   {
     path: "/#cars",
     display: "Cars",
-    icon: <FaCar size={30} />,
+    icon: <FaCar size={27} />,
   },
   {
     path: "/#blogs",
     display: "Blog",
-    icon: <FaBlog size={30} />,
+    icon: <FaBlog size={27} />,
   },
   {
     path: "/#contact",
     display: "Contact",
-    icon: <FaEnvelope size={30} />,
+    icon: <FaEnvelope size={27} />,
   },
 ];
 
