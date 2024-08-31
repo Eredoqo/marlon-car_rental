@@ -15,9 +15,9 @@ import BlogList from "../components/UI/BlogList";
 
 const Home = () => {
   return (
-    <Helmet title="Home">
+    <>
       {/* ============= hero section =========== */}
-      <section className=" p-0 hero__slider-section">
+      <section className="p-0 hero__slider-section">
         <HeroSlider />
       </section>
       {/* =========== about section ================ */}
@@ -84,7 +84,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-    </Helmet>
+    </>
   );
 };
 

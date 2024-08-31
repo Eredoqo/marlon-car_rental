@@ -1,5 +1,29 @@
 .custom-modal .modal-dialog {
-    width: 70%;
-    height: 50%;
-    max-width: none;
+  width: 70%;
+  height: 50%;
+  max-width: none;
+}
+
+.custom-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-modal .modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.custom-modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.whatsapp-icon {
+  color: green !important;
+  font-size: 32px;
 }

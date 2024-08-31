@@ -39,11 +39,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
+    <div id="top">
       <Header />
       <Home />
       <Footer />
-    </>
+    </div>
   );
 }
 

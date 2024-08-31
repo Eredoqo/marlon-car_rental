@@ -1,0 +1,15 @@
+/* Add this to your detailModal.css file */
+
+/* Default styles for the modal */
+
+.modal-body {
+  padding: 50px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .modal-content {
+    height: 90vh;
+    width: 60vw;
+  }
+}

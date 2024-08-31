@@ -174,10 +174,25 @@
     display: none;
   }
 
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  .scroll-to-top {
+    position: fixed;
+    bottom: 05px;
+    right: 25px;
+    background: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+
+  .scroll-to-top:hover {
+    background: #fff;
+    cursor: pointer;
   }
 
   .mobile__menu {
@@ -204,6 +219,8 @@
   }
 
   .menu {
+    width: 100%;
+    overflow: hidden;
     height: 100%;
     background: #fff;
     display: flex;

@@ -31,17 +31,27 @@ const BlogItem = ({ item }) => {
   return (
     <Col lg="4" md="6" sm="6" className="mb-5">
       <Card style={{ borderRadius: "15px", width: "100%", height: "100%" }}>
-        <CardImg
+        <div
           style={{
-            borderRadius: "15px",
-            width: "100%",
-            height: "200px",
-            objectFit: "cover",
+            overflow: "hidden",
+            padding: "20px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          top
-          src={imgUrl}
-          alt="Card image cap"
-        />
+        >
+          <CardImg
+            style={{
+              borderRadius: "10px",
+              width: "100%",
+              height: "200px",
+              objectFit: "cover",
+            }}
+            top
+            src={imgUrl}
+            alt="Card image cap"
+          />
+        </div>
         <CardBody>
           <CardTitle style={{ color: "green" }} tag="h5">
             <div>{title}</div>

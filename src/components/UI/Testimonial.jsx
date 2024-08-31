@@ -49,7 +49,7 @@ const Testimonial = () => {
       <Slider {...settings}>
         {testimonialsData.map((testimonialData, index) => (
           <div key={index} className="testimonial py-4 px-3">
-            <Card style={{ borderRadius: "15px" }}>
+            <Card className="card-testimonial" style={{ borderRadius: "15px" }}>
               <CardBody
                 style={{ height: "250px", width: "100%", overflow: "auto" }}
               >
@@ -74,6 +74,7 @@ const Testimonial = () => {
                     <h4 className="mb-0 mt-3 title">{testimonialData.name}</h4>
                     <h5 className="desc">Customer</h5>
                     <img
+                      className="flag"
                       src={testimonialData.flagUrl}
                       alt="Country Flag"
                       style={{ width: "1.5em", height: "1em" }}

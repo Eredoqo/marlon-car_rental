@@ -4,13 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "../../styles/booking-form.css";
 
-const BookingForm = () => {
-  const submitHandler = (event) => {
-    event.preventDefault();
+const BookingForm = ({ toggle }) => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          console.log(result.text);
+          toggle();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <Form onSubmit={submitHandler} className="booking-form">
+    <Form onSubmit={sendEmail} className="booking-form">
       <h5 className="mb-4 fw-bold d-flex justify-content-center">
         Booking Information
       </h5>
@@ -86,9 +98,9 @@ const BookingForm = () => {
         <Button type="submit" className="btn btn-primary">
           Reserve Now
         </Button>
-        <a href="https://wa.me/+355 68 304 8393">
-          <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: "40px" }} />
-        </a>
+        <div>
+          <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" />
+        </div>
       </div>
     </Form>
   );

@@ -9,6 +9,19 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* Ensure no horizontal overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections fit within the viewport */
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* ========= pre-define css ========= */
 h1,
 h2,

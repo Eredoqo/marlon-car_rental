@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal, ModalHeader, ModalBody, Row, Col } from "reactstrap";
+import { Modal, ModalBody, Row, Col } from "reactstrap";
+import "./../../styles/moda-details.css";
 
 const DetailsModal = ({ item, modal, toggle }) => {
   const {
@@ -17,7 +18,7 @@ const DetailsModal = ({ item, modal, toggle }) => {
 
   return (
     <Modal isOpen={modal} toggle={toggle} size="lg">
-      <ModalBody style={{ padding: "50px" }}>
+      <ModalBody className="modal-body">
         <Row>
           {/* Left Column for Image */}
           <Col lg="6" md="6" sm="12" className="mb-4">
