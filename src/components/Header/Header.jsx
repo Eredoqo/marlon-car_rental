@@ -10,7 +10,7 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 import "../../styles/header.css";
-import logo from "../../assets/all-images/marlon.jpeg";
+import logo from "../../assets/all-images/marlon-removebg-preview.png";
 
 const navLinks = [
   {
