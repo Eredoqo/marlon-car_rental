@@ -3,13 +3,19 @@ import { Form, FormGroup, Input, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "../../styles/booking-form.css";
+import emailjs from "emailjs-com";
 
 const BookingForm = ({ toggle }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        "service_rijoxoc",
+        "template_qrqsx7o",
+        e.target,
+        "uh2R_kbxSvUJcSKXh"
+      )
       .then(
         (result) => {
           console.log(result.text);

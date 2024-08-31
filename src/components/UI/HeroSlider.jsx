@@ -27,11 +27,11 @@ const HeroSlider = () => {
                 Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
-                Reserve Now and See Our Offers
+                Contact Now and See Our Offers
               </h1>
 
               <button className="btn reserve__btn mt-4">
-                <Link to="/cars">Reserve Now</Link>
+                <Link to="/cars">Take a look at our cars and Reserve Now</Link>
               </button>
             </div>
           </Container>
@@ -44,11 +44,11 @@ const HeroSlider = () => {
                 Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
-                Reserve Now and See Our Offers
+                Contact Now and See Our Offers
               </h1>
 
               <button className="btn reserve__btn mt-4">
-                <Link to="/cars">Reserve Now</Link>
+                <Link to="/cars">Take a look at our cars and Reserve Now</Link>
               </button>
             </div>
           </Container>
@@ -61,11 +61,11 @@ const HeroSlider = () => {
                 Cars For Rent €25 to €50 Per Day
               </h4>
               <h1 className="text-light mb-4">
-                Reserve Now and See Our Offers
+                Contact Now and See Our Offers
               </h1>
 
               <button className="btn reserve__btn mt-4">
-                <Link to="/cars">Reserve Now</Link>
+                <Link to="/cars">Take a look at our cars and Reserve Now</Link>
               </button>
             </div>
           </Container>
