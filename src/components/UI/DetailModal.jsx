@@ -1,6 +1,6 @@
 import React from "react";
-import { Modal, ModalBody, Row, Col } from "reactstrap";
-import "./../../styles/moda-details.css";
+import { Modal, ModalBody, ModalFooter, Button, Row, Col } from "reactstrap";
+import "./../../styles/modal-details.css";
 
 const DetailsModal = ({ item, modal, toggle }) => {
   const {
@@ -107,6 +107,11 @@ const DetailsModal = ({ item, modal, toggle }) => {
           </Col>
         </Row>
       </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={toggle}>
+          Close
+        </Button>
+      </ModalFooter>
     </Modal>
   );
 };

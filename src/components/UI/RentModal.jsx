@@ -3,7 +3,7 @@ import { Col, Modal, ModalBody, ModalFooter, Button } from "reactstrap";
 import BookingForm from "./BookingForm";
 import "../../styles/modal.css";
 
-const RentModal = ({ toggle, modal, toggle }) => {
+const RentModal = ({ toggle, modal }) => {
   return (
     <Modal isOpen={modal} toggle={toggle} className="custom-modal">
       <ModalBody>
