@@ -78,7 +78,7 @@ const carData = [
     carName: "Toyota Rav4",
     imgUrl: img05,
     model: "Model-2022",
-    price: 25,
+    price: 50,
     speed: "150km/hl",
     gps: "GPS Navigation",
     seatType: "Heated seats",

@@ -104,9 +104,9 @@ const BookingForm = ({ toggle }) => {
         <Button type="submit" className="btn btn-primary">
           Reserve Now
         </Button>
-        <div>
+        <a href="https://wa.me/+355 68 304 8393">
           <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" />
-        </div>
+        </a>
       </div>
     </Form>
   );
