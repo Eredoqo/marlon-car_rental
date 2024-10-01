@@ -15,7 +15,6 @@ const CarDetails = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would handle the submission, for example send it to your server
     console.log(name, testimonial);
     setName("");
     setTestimonial("");
@@ -118,9 +117,9 @@ const CarDetails = () => {
               </div>
             </Col>
 
-            <Col lg="7" className="mt-5">
-              <div className="booking-info mt-5">
-                <h5 className="mb-4 fw-bold ">Booking Information</h5>
+            <Col lg="7">
+              <div className="booking-info mt-3">
+                <h5 className="fw-bold ">Booking Information</h5>
                 <BookingForm />
               </div>
               <div className="payment text-center mt-5">

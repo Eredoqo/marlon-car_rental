@@ -7,8 +7,8 @@ const RentModal = ({ toggle, modal }) => {
   return (
     <Modal isOpen={modal} toggle={toggle} className="custom-modal">
       <ModalBody>
-        <Col lg="12" className="mt-5">
-          <div className="booking-info mt-5">
+        <Col lg="12" className="mt-3">
+          <div className="booking-info mt-3">
             <BookingForm toggle={toggle} />
           </div>
         </Col>

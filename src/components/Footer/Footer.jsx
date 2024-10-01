@@ -78,7 +78,7 @@ const Footer = () => {
               </p>
               <p className="office__info">
                 <AiOutlineMail style={{ color: " #01530d" }} /> Email:
-                marlonrentacars@gmail.com
+                marlonrentalcars@gmail.com
               </p>
             </div>
           </Col>

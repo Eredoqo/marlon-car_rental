@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
 .booking__form select,
 .textarea {
   width: 100%;

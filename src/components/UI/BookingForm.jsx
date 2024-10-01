@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Input, Button } from "reactstrap";
+import { Form, FormGroup, Input, Button, Label } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "../../styles/booking-form.css";
@@ -12,14 +12,14 @@ const BookingForm = ({ toggle }) => {
     emailjs
       .sendForm(
         "service_rijoxoc",
-        "template_qrqsx7o",
+        "template_ufihunv",
         e.target,
         "uh2R_kbxSvUJcSKXh"
       )
       .then(
         (result) => {
           console.log(result.text);
-          toggle();
+          toggle(); // Ensure toggle is called here
         },
         (error) => {
           console.log(error.text);
@@ -35,33 +35,75 @@ const BookingForm = ({ toggle }) => {
 
       <div className="d-flex flex-wrap">
         <FormGroup className="flex-fill me-2 mb-3">
-          <Input type="text" placeholder="First Name" required />
+          <Input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
         </FormGroup>
         <FormGroup className="flex-fill ms-2 mb-3">
-          <Input type="text" placeholder="Last Name" required />
+          <Input type="text" name="lastName" placeholder="Last Name" required />
         </FormGroup>
       </div>
 
       <div className="d-flex flex-wrap">
         <FormGroup className="flex-fill me-2 mb-3">
-          <Input type="email" placeholder="Email" required />
+          <Input type="email" name="email" placeholder="Email" required />
         </FormGroup>
         <FormGroup className="flex-fill ms-2 mb-3">
-          <Input type="tel" placeholder="Phone Number" required />
+          <Input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            required
+          />
         </FormGroup>
       </div>
 
       <div className="d-flex flex-wrap">
         <FormGroup className="flex-fill me-2 mb-3">
-          <Input type="text" placeholder="From Address" required />
+          <Input
+            type="text"
+            name="fromAddress"
+            placeholder="From Address"
+            required
+          />
         </FormGroup>
         <FormGroup className="flex-fill ms-2 mb-3">
-          <Input type="text" placeholder="To Address" required />
+          <Input
+            type="text"
+            name="toAddress"
+            placeholder="To Address"
+            required
+          />
         </FormGroup>
       </div>
 
       <div className="d-flex flex-wrap">
         <FormGroup className="flex-fill me-2 mb-3">
+          <Label for="startDate">Start Date</Label>
+          <Input
+            type="date"
+            name="journeyDate"
+            placeholder="End Date"
+            required
+          />
+        </FormGroup>
+        <FormGroup className="flex-fill me-2 mb-3">
+          <Label for="startDate">End Date</Label>
+          <Input
+            type="date"
+            name="journeyDate"
+            placeholder="Start Date"
+            required
+          />
+        </FormGroup>
+      </div>
+
+      <div className="d-flex flex-wrap">
+        <FormGroup className="flex-fill me-2 m-0">
+          <Label for="people">Number of People</Label>
           <Input type="select" name="people" required>
             <option value="1 person">1 Person</option>
             <option value="2 persons">2 Persons</option>
@@ -71,22 +113,13 @@ const BookingForm = ({ toggle }) => {
           </Input>
         </FormGroup>
         <FormGroup className="flex-fill ms-2 mb-3">
-          <Input type="select" name="luggage" required>
-            <option value="1 luggage">1 Luggage</option>
-            <option value="2 luggage">2 Luggage</option>
-            <option value="3 luggage">3 Luggage</option>
-            <option value="4 luggage">4 Luggage</option>
-            <option value="5+ luggage">5+ Luggage</option>
-          </Input>
-        </FormGroup>
-      </div>
-
-      <div className="d-flex flex-wrap">
-        <FormGroup className="flex-fill me-2 mb-3">
-          <Input type="date" placeholder="Journey Date" required />
-        </FormGroup>
-        <FormGroup className="flex-fill ms-2 mb-3">
-          <Input type="time" placeholder="Journey Time" required />
+          <Label for="journeyTime">Time to Pick Up</Label>
+          <Input
+            type="time"
+            name="journeyTime"
+            placeholder="Journey Time"
+            required
+          />
         </FormGroup>
       </div>
 
@@ -94,7 +127,8 @@ const BookingForm = ({ toggle }) => {
         <Input
           type="textarea"
           rows="4"
-          placeholder="Write"
+          name="message"
+          placeholder="Write your message"
           className="textarea"
           required
         />
@@ -104,7 +138,7 @@ const BookingForm = ({ toggle }) => {
         <Button type="submit" className="btn btn-primary">
           Reserve Now
         </Button>
-        <a href="https://wa.me/+355 68 304 8493">
+        <a href="https://wa.me/+355683048493">
           <FontAwesomeIcon icon={faWhatsapp} className="whatsapp-icon" />
         </a>
       </div>
