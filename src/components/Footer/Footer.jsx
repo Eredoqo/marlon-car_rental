@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import "../../styles/footer.css";
-import logo from "./../../assets/all-images/marlon-removebg-preview.png";
+import logo from "./../../assets/all-images/marlon-logo.png";
 
 const quickLinks = [
   {
